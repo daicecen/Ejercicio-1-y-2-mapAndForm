@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52456.17831843312!2d-58.4239333274845!3d-34.7427147632234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2a1814f921f%3A0x1ff108ea8ecb9dd6!2sBanfield%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697755000115!5m2!1ses-419!2sar"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="form-container">
+        <h2>Deja tus comentarios</h2>
+        <form action="./show_data.html">
+          <fieldset>
+            <label for="first-name">Nombre:</label>
+          <input type="text" id="first-name" name="first-name">
+
+          <label for="last-name">Apellido:</label>
+          <input type="text" id="last-name" name="last-name">
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Sugerencias o comentarios:</label>
+          <textarea id="message" name="message" rows="15" required></textarea>
+
+          <input type="submit" value="Enviar">
+          </fieldset>
+          
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
